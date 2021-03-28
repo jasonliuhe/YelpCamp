@@ -38,7 +38,6 @@ const validateCampground = (req, res, next) => {
     } else {
         next();
     }
-    console.log(result);
 }
 
 const validateReview = (req, res, next) => {
