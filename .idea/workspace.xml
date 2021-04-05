@@ -2,17 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="35d8f209-cebf-42f4-ab13-20666faee94a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/controllers/campgrounds.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controllers/review.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controllers/users.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/stylesheets/stars.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloudinary/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/0fbd1ab1441bc55fbf71bd0d87e1c4f2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/55869b4de00ee41eee09fb634cc42cf7" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/campgrounds.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/campgrounds.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/campground.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/campground.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/campgrouds.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/campgrouds.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/reviews.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/reviews.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/users.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/schemas.js" beforeDir="false" afterPath="$PROJECT_DIR$/schemas.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seeds/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/seeds/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/campgrounds/edit.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/campgrounds/edit.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/campgrounds/index.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/campgrounds/index.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/campgrounds/new.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/campgrounds/new.ejs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/campgrounds/show.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/campgrounds/show.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/layouts/boilerplate.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/layouts/boilerplate.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/users/login.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/users/login.ejs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,12 +42,15 @@
     <dismissed value="$PROJECT_DIR$/package.json" />
   </component>
   <component name="ProjectId" id="1qGbWf0gwJndBZ2w4RPYQLQcnPi" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
@@ -49,7 +60,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -61,6 +72,23 @@
       <recent name="$PROJECT_DIR$/public/javascripts" />
     </key>
   </component>
+  <component name="RunManager">
+    <configuration name="test" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="test" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.test" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -70,7 +98,7 @@
       <option name="presentableId" value="Default" />
       <updated>1616708906749</updated>
       <workItem from="1616708907949" duration="7629000" />
-      <workItem from="1616974373914" duration="25704000" />
+      <workItem from="1616974373914" duration="34911000" />
     </task>
     <task id="LOCAL-00001" summary="Bug fix">
       <created>1616974504380</created>
@@ -107,7 +135,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617400171855</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Adding Controllers &amp; Star Rating.">
+      <created>1617639477921</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1617639477921</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -126,6 +161,7 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <ignored-roots>
       <path value="$PROJECT_DIR$/../.." />
     </ignored-roots>
@@ -134,6 +170,7 @@
     <MESSAGE value="Adding Authentication" />
     <MESSAGE value="Adding authorization of review" />
     <MESSAGE value="Adding Controllers &amp; Star Rating." />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding Controllers &amp; Star Rating." />
+    <MESSAGE value="Adding Image Upload." />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding Image Upload." />
   </component>
 </project>
