@@ -1,6 +1,9 @@
 <% layout('layouts/boilerplate') %>
 <!--The href of the link no need add /public because it is the default folder of the server-->
 <link rel="stylesheet" href="/stylesheets/stars.css">
+
+
+
 <div class="row">
     <div class="col-6">
 
@@ -50,6 +53,7 @@
         </div>
     </div>
     <div class="col-6">
+        <div id='map' style='width: 100%; height: 300px;'></div>
         <% if (currentUser) { %>
             <h2>Leave a Review</h2>
             <form action="/campgrounds/<%= campground._id %>/reviews" class="mb-3 validated-form" method="POST"
@@ -105,3 +109,9 @@
         <% } %>
     </div>
 </div>
+<script>
+    const mapToken = '<%-process.env.MAPBOX_TOKEN%>';
+    const campground = <%-JSON.stringify(campground)%>;
+</script>
+
+<script src="/javascripts/showPageMap.js"></script>
